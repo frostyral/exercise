@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+ <!--
+  
+  
+                       
+</div> -->
+
+
+
+<html>
+    <head>
+        <title>Jehral Exercise</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    </head>
+
+    <body>
+        <div class="hero">
+            <h1>Community<span> Stories</span></h1>
+            <div class="content">
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                      
+                      <img src="story_three.png" class="story_image">
+                      
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      
+                      <img src="story_one.png" class="story_image">
+                      
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div>
+                        <img src="story_two.png" class="story_image">
+                        
+                      </div>
+                      
+                      
+                    </div>
+                    <br>
+                    <div class="dots">
+                          <span class="dot" onclick="currentSlide(1)"></span>
+                          <span class="dot" onclick="currentSlide(2)"></span>
+                          <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                </div>      
+                <h2>Featured Posts/Community Header</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Gravida ante iaculis diam
+                facilisi aliquam lobortis mi purus lectus. Eu porta varius vitae risus diam orci, senectus neque. Ultricies platea vivamus mollis dui eu cursus quis.</p>
+                <p>Orci etiam suspendisse amet tincidunt lacus, enim, maecenas urna, nisl. Sit interdum sapien, tincidunt convallis nisl. Sit interdum sapien, tincidunt convallis nisi senectus fringilla turpis aliquet. Nibh pharetra, ac rhoncus placerat non proin purus est libero. Lacinia amet eros pharetra, turpis consequat, nunc auctor. Donec ullamcorper lectus id pellentesque. Sem diam viverra nunc amet convallis integer pellentesque.</p>
+                <a href="#" class="btn">Read More    <i class="bi bi-arrow-right">     </i> </a>
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+</body>
+</html>
