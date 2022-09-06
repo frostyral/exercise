@@ -1,0 +1,55 @@
+.fontStyle {
+  font-family: IBM plex Sans;
+  font-size: 14px;
+  font-weight: none;
+}
+.listStyle {
+  list-style-type: none;
+}
+* {
+  font-family: IBM plex Sans;
+  font-size: 14px;
+  font-weight: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 30%;
+  line-height: 30px;
+  float: left;
+  margin-top: 50px;
+}
+.container ul {
+  display: grid;
+}
+.container ul ul {
+  border-bottom: solid 1px gray;
+  padding: 10px 20px;
+}
+.container ul ul li {
+  display: inline;
+}
+.container ul ul li h5 {
+  font-weight: lighter;
+  line-height: 30px;
+  font-size: 10px;
+  color: gray;
+}
+.container ul ul li p {
+  font-size: 12px;
+}
+.container ul ul li h4 {
+  color: #7878f1;
+  font-size: 14px;
+}
+.container ul ul li i {
+  color: #7878f1;
+  font-size: 14px;
+}
+.container li h1 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 100;
+  padding: 0px 10px;
+}
