@@ -1,12 +1,40 @@
 .hero{
+    justify-content: center;
     font-family: sans-serif;
-    margin-top: 40px;
-    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
 }
 
 .hero h1{
     justify-content: left;
+    color: black;
     
+    font-size: 38px;
+}
+
+.hero a{
+    width: 180px;
+    flex: row;
+    flex-direction: row;
+    position: relative;
+    bottom: 20px;
+    background-color: #283883;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 15px 35px 15px 15px;
+    transition: transform .4s;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.content a i{
+    font-size: 22px;
+    position: relative;
+    left: 45px;
+    top: 3px;
 }
 
 .content{
@@ -19,16 +47,8 @@
     width: 100%;
 }
 
-i{
-    font-size: 20px;
-    position: relative;
-    left: 20px;
-}
-h1{
-    color: black;
-    
-    font-size: 38px;
-}
+
+
 h2{
     position: relative;
     bottom: 10px;
@@ -51,32 +71,80 @@ p{
     font-size: 18px;
 }
 
-.btn{
-    position: relative;
-    bottom: 20px;
-    background-color: #283883;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: lighter;
-    padding: 15px 35px 15px 15px;
-    transition: transform .4s;
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
+
 .btn:hover{
     background-color: orange;
     transform: scale(1.1);
 }
 
-a{
-    margin-top: 40px;
-    width: 150px;
+
+
+/*Content Two Start */
+
+.content_two{
+    position: relative;
+    left: 20px;
+    top: 50px;
     flex: row;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.content_two h1{
+    position: relative;
+    top: 20px;
+    font-weight: lighter;
+    right: 2px;
+}
+
+.content_two .btn{
+    background-color: transparent;
+    color: #283883;
+    font-weight: bold;
+    position: relative;
+    right: 35px;
+    top: 0px;
+    font-size: 18px;
+}
+
+.content_two a i{
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    top: 4px;
+    left: 7px;
+}
+
+.content_two p{
+    position: relative;
+    right: 20px;
+    bottom: 5px;
+    color: grey;
+    font-size: 14px;
+}
+
+.content_two h2{
+    position: relative;
+    right: 24px;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.event{
+    position: relative;
+    border-bottom: solid 1px gray;
+    padding: 15px 20px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.event_last{
+    position: relative;
+    padding: 10px 20px;
+}
+
+
+/*Content Two End */
 
 * {box-sizing:border-box}
 
