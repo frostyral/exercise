@@ -10,10 +10,13 @@
 }
 
 .content{
-    width: 50%;
+    max-width: 650px;
     display: flex;
     flex-direction: column;
-    align-items: left;
+}
+
+.content p{
+    width: 100%;
 }
 
 i{
@@ -27,6 +30,8 @@ h1{
     font-size: 38px;
 }
 h2{
+    position: relative;
+    bottom: 10px;
     font-weight: bold;
 
 }
@@ -40,22 +45,25 @@ span{
 }
 
 p{
-    margin-bottom: 10px;
+    position: relative;
+    bottom: 10px;
     line-height: 20px;
+    font-size: 18px;
 }
 
 .btn{
-    
+    position: relative;
+    bottom: 20px;
     background-color: #283883;
     color: white;
     text-decoration: none;
     font-size: 16px;
     font-weight: lighter;
-    padding: 15px 20px 15px 15px;
+    padding: 15px 35px 15px 15px;
     transition: transform .4s;
     text-align: left;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 .btn:hover{
     background-color: orange;
@@ -75,7 +83,7 @@ a{
 /* Slideshow container */
 .slideshow-container {
   max-width: 750px;
-  max-height: 750px;
+  max-height: 700px;
 }
 
 
@@ -84,6 +92,7 @@ a{
 
 
 .story_image{
+    height: 450px;
     width: 100%;
 }
 
