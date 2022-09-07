@@ -1,15 +1,110 @@
-.fontStyle {
-  font-family: IBM plex Sans;
-  font-size: 14px;
-  font-weight: none;
+/* Jehral Code Start*/
+
+.hero{
+  justify-content: center;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
 }
+
+.content h1 {
+  justify-content: left;
+  color: black;
+  font-size: 38px;
+  padding-top: 5%;
+  padding-bottom: 20px;
+}
+
+.content p{
+  position: relative;
+  bottom: 10px;
+  line-height: 20px;
+  font-size: 18px;
+  color: black;
+  padding-top: 20px;
+}
+
+.content a{
+  width: 180px;
+  position: relative;
+  background-color: #283883;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 15px 35px 15px 15px;
+  transition: transform .4s;
+  text-align: left;
+  top: 10px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.content h2{
+  position: relative;
+  bottom: 10px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.content h3{
+  color: black;
+  font-size: 25px;
+ 
+}
+.hero span{
+  font-weight: lighter;
+}
+
+.content a i{
+  font-size: 22px;
+  position: relative;
+  left: 45px;
+  top: 3px;
+}
+
+.content{
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+}
+
+.content p{
+  width: 100%;
+}
+
+.content {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+}
+.content p {
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: orange;
+  transform: scale(1.1);
+}
+* {
+  box-sizing: border-box;
+}
+
+
+/* Jehral Code End*/
+
+
+
+
+
+
+
+
 .listStyle {
   list-style-type: none;
 }
 * {
-  font-family: IBM plex Sans;
-  font-size: 14px;
-  font-weight: none;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -17,7 +112,7 @@
 }
 .container {
   width: 30%;
-  margin-top: 50px;
+  margin-top: 60px;
   padding: 0px 20px;
 }
 .container ul ul {
@@ -65,74 +160,10 @@
   font-size: 25px;
   font-weight: 10;
 }
-.hero {
-  justify-content: center;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: row;
-}
-.hero h1 {
-  justify-content: left;
-  color: black;
-  font-size: 38px;
-}
-.hero a {
-  width: 180px;
-  flex: row;
-  flex-direction: row;
-  position: relative;
-  bottom: 20px;
-  background-color: #283883;
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: lighter;
-  padding: 15px 35px 15px 15px;
-  transition: transform 0.4s;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 40px;
-}
-.content a i {
-  font-size: 22px;
-  position: relative;
-  left: 45px;
-  top: 3px;
-}
-.content {
-  max-width: 650px;
-  display: flex;
-  flex-direction: column;
-}
-.content p {
-  width: 100%;
-}
-h2 {
-  position: relative;
-  bottom: 10px;
-  font-weight: bold;
-}
-h3 {
-  color: black;
-  font-size: 25px;
-}
-span {
-  font-weight: lighter;
-}
-p {
-  position: relative;
-  bottom: 10px;
-  line-height: 20px;
-  font-size: 18px;
-}
-.btn:hover {
-  background-color: orange;
-  transform: scale(1.1);
-}
-* {
-  box-sizing: border-box;
-}
+
+
 /* Slideshow container */
+
 .slideshow-container {
   max-width: 750px;
   max-height: 700px;
@@ -141,7 +172,7 @@ p {
   display: none;
 }
 .story_image {
-  height: 450px;
+  height: 400px;
   width: 100%;
 }
 .dots {
