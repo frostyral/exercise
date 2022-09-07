@@ -105,6 +105,12 @@ p{
     right: 35px;
     top: 0px;
     font-size: 18px;
+    transition: transform .4s;
+}
+
+.content_two .btn:hover{
+    color: orange;
+    transform: scale(1.1);
 }
 
 .content_two a i{
@@ -114,6 +120,8 @@ p{
     top: 4px;
     left: 7px;
 }
+
+
 
 .content_two p{
     position: relative;
@@ -185,7 +193,7 @@ p{
 }
 
 .active, .dot:hover {
-  background-color: #283883;
+  background-color: orange;
 }
 
 /* Fading animation */
