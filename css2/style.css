@@ -16,31 +16,29 @@
   box-sizing: border-box;
 }
 .container {
-  width: 40%;
-  line-height: 20px;
-  margin-top: 25px;
-  padding: 0px 20px;
+  width: 30%;
+  line-height: 30px;
+  float: left;
+  margin-top: 50px;
 }
 .container ul {
   display: grid;
 }
 .container ul ul {
-  padding: 10px 0px;
+  border-bottom: solid 1px gray;
+  padding: 10px 20px;
 }
 .container ul ul li {
-  line-height: 21px;
   display: inline;
 }
 .container ul ul li h5 {
-  font-weight: bold;
-  line-height: 21px;
+  font-weight: lighter;
+  line-height: 30px;
   font-size: 10px;
   color: gray;
 }
 .container ul ul li p {
-  font-size: 14px;
-  color: #524f4f;
-  font-weight: bold;
+  font-size: 12px;
 }
 .container ul ul li h4 {
   color: #7878f1;
@@ -48,78 +46,21 @@
 }
 .container ul ul li i {
   color: #7878f1;
-  font-size: 20px;
-  position: relative;
-  left: 10px;
-  top: 3px;
+  font-size: 14px;
 }
 .container li h1 {
   font-size: 25px;
   line-height: 30px;
-  font-weight: 10;
+  font-weight: 100;
+  padding: 0px 10px;
 }
 .community-container {
-  width: 60%;
-}
-.community-container h1 {
-  font-size: 25px;
-  line-height: 30px;
-}
-.community-container h1 span {
-  font-weight: 10;
-  font-size: 25px;
-}
-.community-container .content {
-  width: 95%;
+  border: solid 1px black;
+  padding: 0px 40px;
   position: relative;
-}
-.community-container .content ul li h2 {
-  font-size: 20px;
-}
-.community-container .content ul li p {
-  font-size: 18px;
-  line-height: 18px;
-  margin-top: 10px;
-}
-.community-container .content ul li #read-more p {
-  position: relative;
-  top: 20px;
-}
-.community-container .content ul li #read-more h3 {
-  color: white;
-  background-color: #7878f1;
-  padding: 10px 10px;
-  font-size: 16px;
-  width: 20%;
-  margin-top: 20px;
-}
-.community-container .content ul li #read-more i {
-  font-size: 18px;
-  position: relative;
-  left: 5%;
-  top: 2px;
 }
 .community-container .slide-cont {
-  /*cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: 45%;
-            padding: 16px;
-            margin-top: -22px;
-            color: black;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6 ease;
-            border-radius: 0px 3px 3px 0px;
-            user-select: none;*/
-  /*.next{ //position of next button to the right
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .prev:hover, .next:hover{
-            background-color: rgb(0, 0, 0, 0.8);
-        }*/
+  text-align: center;
 }
 .community-container .slide-cont .slides {
   /*.cap-text{//text caption
@@ -133,11 +74,12 @@
             }*/
 }
 .community-container .slide-cont .slides img {
-  width: 100%;
-  height: 40vh;
+  vertical-align: middle;
+  width: 50%;
+  height: 50%;
 }
 .community-container .slide-cont .slides .num-text {
-  color: #272323;
+  color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: relative;
@@ -147,10 +89,31 @@
   animation-name: fade;
   animation-duration: 1.5s;
 }
+.community-container .slide-cont .next,
+.community-container .slide-cont .prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6 ease;
+  border-radius: 0px 3px 3px 0px;
+  user-select: none;
+}
+.community-container .slide-cont .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.community-container .slide-cont .prev:hover,
+.community-container .slide-cont .next:hover {
+  background-color: #000000;
+}
 .community-container .slide-cont .dots {
-  position: relative;
-  left: 50%;
-  bottom: 30px;
+  text-align: center;
 }
 .community-container .slide-cont .dots .dot {
   cursor: pointer;
@@ -183,9 +146,4 @@
 }
 .merge {
   display: flex;
-  padding: 20px 0px;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 20px;
-  left: 0;
 }
